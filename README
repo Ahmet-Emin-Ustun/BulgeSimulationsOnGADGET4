@@ -1,6 +1,13 @@
 #Bulge Simulations On Gadget4 
   This repository is mainly used to store parameter files used to develop simulations of Bulge formation and growth on GADGET4(a simulation program made by Volker Springel) 
 
+#License
+This project is licensed under the BSD 3-Clause License. For details, see the license file.
+
+#Authors
+-Nisan Kaya
+-Ahmet Emin Ustun
+
 ## Usage
 Run Gadget-4 with one of the provided parameter files, e.g.:
 
