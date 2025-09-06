@@ -1,0 +1,8 @@
+#Bulge Simulations On Gadget4 
+  This repository is mainly used to store parameter files used to develop simulations of Bulge formation and growth on GADGET4(a simulation program made by Volker Springel) 
+
+## Usage
+Run Gadget-4 with one of the provided parameter files, e.g.:
+
+```bash
+./Gadget4 params/bulge_test.param
