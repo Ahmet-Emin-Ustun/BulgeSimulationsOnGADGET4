@@ -1,0 +1,101 @@
+%-----  Relevant Files
+InitCondFile                                      initial_conditions.hdf5
+OutputDir                                         output/
+SnapshotFileBase                                  snapshot
+OutputListOn                                      0 
+OutputListFilename                                output_times.txt
+
+%----- IC Formats
+SnapFormat                                        3 
+ICFormat                                          3 
+
+%---- CPU-time limits
+TimeLimitCPU                                      36000
+CpuTimeBetRestartFile                             3600
+
+%----- Memory alloction
+MaxMemSize                                        1024
+
+%---- Basic code options that set the type of simulation
+ComovingIntegrationOn     1 
+
+%----- Cosmological Parameters
+Omega0                                            0.3
+OmegaLambda                                       0.7
+OmegaBaryon                                       0 
+HubbleParam                                       0.7
+Hubble                                            0.1 
+BoxSize                                           5
+
+%---- Output frequency and output paramaters
+TimeBegin                                         0.0196
+TimeMax                                           1
+TimeOfFirstSnapshot                               0.04 
+TimeBetSnapshot                                   1.1
+TimeBetStatistics                                 0.05 
+NumFilesPerSnapshot                               1 
+MaxFilesWithConcurrentIO                          1 
+
+%---- Accuracy of time integration
+ErrTolIntAccuracy                                 0.025
+MaxSizeTimestep                                   0.01
+MinSizeTimestep                                   0.0001
+CourantFac                                        0.1
+
+%---- Tree algorithm, force accuracy, domain update frequency
+TypeOfOpeningCriterion                            1
+ErrTolTheta                                       0.7
+ErrTolThetaMax                                    1
+ErrTolForceAcc                                    0.0025
+TopNodeFactor                                     4
+ActivePartFracForNewDomainDecomp                  0.01
+
+%---- System of units 
+UnitLength_in_cm                                  3.08568e+21
+UnitMass_in_g                                     1.989e+43
+UnitVelocity_in_cm_per_s                          100000
+GravityConstantInternal                           0 
+
+%---- Initial density estimate
+DesNumNgb                                         64
+MaxNumNgbDeviation                                2
+
+%---- SPH
+InitGasTemp                                       100
+MinEgySpec                                        1e-12
+ArtBulkViscConst                                  0.8
+
+%---- Gravitational softening length
+SofteningComovingClass0                           0.01
+SofteningComovingClass1                           0.01
+SofteningComovingClass2                           20
+SofteningComovingClass3                           20
+SofteningComovingClass4                           20
+SofteningComovingClass5                           20
+
+SofteningMaxPhysClass0                            20
+SofteningMaxPhysClass1                            20
+SofteningMaxPhysClass2                            20
+SofteningMaxPhysClass3                            20
+SofteningMaxPhysClass4                            20  
+SofteningMaxPhysClass5                            20
+
+SofteningClassOfPartType0                         1
+SofteningClassOfPartType1                         1
+SofteningClassOfPartType2                         1  
+SofteningClassOfPartType3                         1
+SofteningClassOfPartType4                         1
+SofteningClassOfPartType5                         1
+
+%---- N-GenIC 
+GridSize                                          32
+NSample                                           32
+Seed                                              123456
+PowerSpectrumType                                 1
+Sigma8                                            0.8
+PrimordialIndex                                   1
+ShapeGamma                                        0.2
+PowerSpectrumFile                                 none
+ReNormalizeInputSpectrum                          0
+InputSpectrum_UnitLength_in_cm                    3.08568e+24
+SphereMode                                        0
